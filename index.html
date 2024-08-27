@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/Logo.png" alt="Logo" class="logo">
+        </header>
+        <main>
+            <section class="input-section">
+                <textarea id="inputText" placeholder="Ingrese el texto aqui" aria-label="Texto para encriptar o desencriptar"></textarea>
+                <div class="input-footer">
+                    <p id="validationMessage" class="warning"><span class="icon">&#9432;</span> Solo letras minúsculas y sin acentos</p>
+                    <div class="buttons">
+                        <button id="encryptBtn" class="btn-primary">Encriptar</button>
+                        <button id="decryptBtn" class="btn-secondary">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="output-section">
+                <div id="outputContent">
+                    <img src="assets/Muñeco.png" alt="No message" class="no-message-image">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <textarea id="outputText" readonly style="display: none;" aria-label="Resultado de la encriptación o desencriptación"></textarea>
+                <button id="copyBtn" class="btn-copy" style="display: none;">Copiar</button>
+            </section>
+        </main>
+        <footer>
+            <p>Desarrollado por Edgar Schaddaí Bañuelos Treto - 2024</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
